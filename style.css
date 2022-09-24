@@ -1,36 +1,97 @@
+  @keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
   body {
     /* font-size: 10px; */
+    animation: color 9s infinite linear;
+    padding: 2em;
     display: flex;
     -webkit-box-align: center;
             align-items: center;
     -webkit-box-pack: center;
             justify-content: center;
     min-height: 100vh;
-    background: #2f2f2f;
     font-family: 'Courier New', Courier, monospace;
   }
-
   h1, h2{
     letter-spacing: .1rem;
     line-height: 0.6;
   }
   h1 {
-    font-size: 250%;
-    color: #00000050;
+    font-size: 350%;
+    color: #585856;
   }
   h2{
-    color: #00000050;
+    color: #585856;
   }
-
   .flex-block {
-    background-color: white;
+    background-color: #181A1B;
     margin: 0.5%;
     width: 65%;
     border-radius: 15px;
   }
-
+  .sep-section {
+    height: 1px;
+    border-bottom: 1px solid #58594D;
+    margin-bottom: 15px;
+  }
+  .space {
+    margin: 20px;
+  }
+  .redes {
+    height: 65px;
+    cursor: pointer;
+    padding: 0 .1em;
+    --s: 0.1em;
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .fa {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .instagram:hover {
+    transition: 500ms ease;
+    background: linear-gradient(90deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  }
+  .twitter:hover {
+    transition: 500ms ease;
+    background: linear-gradient(90deg, #14171A, #657786, #1DA1F2);
+  }
+  .facebook:hover {
+    transition: 500ms ease;
+    background: linear-gradient(90deg, #14171A, #657786, #4267B2);
+  }
+  img{
+    border-radius: 50%;
+  }
+  .banner {
+    display: flex;
+    margin-top: -195px;
+    -webkit-box-align: right;
+            align-items: right;
+    -webkit-box-pack: right;
+            justify-content: right;
+    margin-right: 5%;
+  }
   a{
     text-decoration: none;
+    color: skyblue;
   }
   div{
     margin: 0.5%;
